@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    background-color:red;
+    color: white;
+    padding: 30px;
+    text-align: center;
+
+}
+div:hover{
+    background-color: blue;
+}
+ul{
+    list-style-type:none;
+    background-color: black;
+   
+}
+li{
+    display: inline-block;
+    padding: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.dropdowncontent{
+    position: absolute;
+    display: none;
+
+}
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div>Mouse over me</div>
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTACT</a></li>
+        <li class="dropdown"><a href="">NEWS</a>
+        <ul class="dropdowncontent">
+            <li><a href="">Latest</a></li>
+            <li><a href="">Old</a></li>
+            <li><a href="">Upcoming</a></li>
+        </ul>
+        </li>
+        
+            
+        </li>
+    </ul>
+</body>
+</html>
